@@ -1,4 +1,4 @@
-import { Container, Wrapper } from "@/components";
+import { Container, Icons, Wrapper } from "@/components";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import SectionBadge from "@/components/ui/section-badge";
@@ -110,6 +110,21 @@ const HomePage = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </Container>
+        <Container className="max-w-md mx-auto text-start md:text-center">
+          <SectionBadge title="Features" />
+          <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+            Discover our powerful features
+          </h2>
+          <p className="text-muted-foreground mt-6">
+            AS offers a range of features to help you build a stunning websites
+            in on time{" "}
+          </p>
+        </Container>
+        <Container>
+          <div className="flex items-center justify-center mx-auto mt-8">
+            <Icons.feature className="w-auto h-80" />
           </div>
         </Container>
       </Wrapper>
