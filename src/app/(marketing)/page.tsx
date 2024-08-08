@@ -1,5 +1,6 @@
 import HeroSection from "@/components/homePage/HeroSection";
 import Pricing from "@/components/homePage/Pricing";
+import Testimonials from "@/components/homePage/Testimonials";
 import WithWork from "@/components/homePage/WithWork";
 
 const HomePage = () => {
@@ -13,6 +14,8 @@ const HomePage = () => {
 
       {/* Pricing */}
       <Pricing />
+      {/* Testimonials */}
+      <Testimonials />
     </section>
   );
 };
