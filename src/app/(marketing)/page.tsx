@@ -1,4 +1,5 @@
 import HeroSection from "@/components/homePage/HeroSection";
+import NewsLetter from "@/components/homePage/NewsLetter";
 import Pricing from "@/components/homePage/Pricing";
 import Testimonials from "@/components/homePage/Testimonials";
 import WithWork from "@/components/homePage/WithWork";
@@ -16,6 +17,8 @@ const HomePage = () => {
       <Pricing />
       {/* Testimonials */}
       <Testimonials />
+      {/* newsletter */}
+      <NewsLetter />
     </section>
   );
 };
