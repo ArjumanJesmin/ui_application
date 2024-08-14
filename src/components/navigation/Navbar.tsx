@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Icons from "../global/icons";
-import { buttonVariants } from "../ui/button";
+import DropdownItem from "./DropdownItem";
 
 const navbar = () => {
   const user = false;
@@ -33,22 +33,8 @@ const navbar = () => {
           {user ? (
             "user button"
           ) : (
-            <div className="flex gap-2">
-              <Link
-                href="sign-in"
-                className={buttonVariants({ size: "sm", variant: "ghost" })}
-              >
-                Login
-              </Link>
-              <Link
-                href="sign-up"
-                className={buttonVariants({
-                  size: "sm",
-                  className: "hidden md:flex",
-                })}
-              >
-                Start free trial
-              </Link>
+            <div>
+              <DropdownItem />
             </div>
           )}
         </div>
